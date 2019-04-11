@@ -11,7 +11,7 @@
 
 #include <avr/io.h>
 
-#define A0 PINA&0x01;
+#define A0 (PINA&0x01)
 
 enum States{Start, On, PressedOff, Off, PressedOn} state;
 unsigned char tmpB;
@@ -65,16 +65,16 @@ void sm() {
 	switch(state)//Actions
 	{
 		case On:
-			tmpB = 0x01;
+			tmpB = 0x01; //Turns B0 on and B1 off
 			break;
 		case PressedOff:
-			tmpB = 0x02;
+			tmpB = 0x02; //turns B0 off and B1 on
 			break;
 		case Off:
-			tmpB = 0x02;
+			tmpB = 0x02; //turns B0 off and B1 on
 			break;
 		case PressedOn:
-			tmpB = 0x01;
+			tmpB = 0x01; //turns B0 on and B1 off
 			break;
 	}
 	

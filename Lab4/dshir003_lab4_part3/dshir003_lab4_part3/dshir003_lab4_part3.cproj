@@ -12,9 +12,9 @@
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>dshir003_lab4_part1</AssemblyName>
-    <Name>dshir003_lab4_part1</Name>
-    <RootNamespace>dshir003_lab4_part1</RootNamespace>
+    <AssemblyName>dshir003_lab4_part3</AssemblyName>
+    <Name>dshir003_lab4_part3</Name>
+    <RootNamespace>dshir003_lab4_part3</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
